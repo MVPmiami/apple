@@ -1,0 +1,585 @@
+html, body{
+    font-size: 62.5%;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    cursor: default;
+}
+h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 5.6rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+/***************************HEADER****************************/
+nav{
+    background-color: #141414;
+    position: static;
+    width: 100%;
+    height: 44px;
+    position: fixed;
+    z-index: 10;
+}
+.navigation-menu{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    height: 44px;
+    width: 52%;
+    margin: 0 auto;
+    padding-left: 0px;
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.navigation-menu li{
+    cursor: pointer;
+    opacity: .7;
+}
+.navigation-menu li:hover{
+    opacity: 1;
+}
+.navigation-menu li:first-child{
+    width: 16px;
+    height: 44px;
+    background-image: url(https://www.apple.com/ac/globalnav/5/en_US/images/globalnav/apple/image_large.svg);
+    opacity: .7;
+}
+.navigation-menu li:nth-child(9){
+    width: 18px;
+    height: 44px;
+    background-repeat: no-repeat;
+    background-size: 18px 88px;
+    background-image: url(https://www.apple.com/ac/globalnav/5/en_US/images/globalnav/search/image_large.svg)
+}
+.navigation-menu li:last-child{
+    width: 18px;
+    height: 44px;
+    background-image: url(https://www.apple.com/ac/globalnav/5/en_US/images/globalnav/bag/image_large.svg);
+}
+.logo-basket{
+    list-style: none;
+}
+/**************************MAIN******************************/
+
+main{
+    display: flex;
+    flex-flow:column wrap;
+    width: 100%;
+    margin-top: 0;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.fast-shoping{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    height: 30px;
+    width: 100%;
+    margin-top: 44px;
+    z-index: 2;
+    background-color: #fff;
+}
+.fast-shoping a{
+    text-decoration: none;
+    color: #006ad5;
+}
+/*****************************IPHONE-SE**********************/
+.iphone-se{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #131313;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: -80px;/****ВЫЧИСЛИТЬ ПРЦОЕНТЫ*/
+    z-index: 2;   
+}
+.info-for-iphone-se{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    font-size: 1.6rem;
+    z-index: 1;
+    position: relative;
+    top:120px; /* ВЫЧИСЛИТЬ ПРОЦЕНТЫ*/
+}
+.info-for-iphone-se p:nth-of-type(1){
+    font-size:2.8rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.info-for-iphone-se p:nth-of-type(2){
+    font-size:2.8rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.info-for-iphone-se p:nth-of-type(3){
+    font-size:1.7rem;
+    margin-top: 0;
+    opacity: .4;
+}
+.info-for-iphone-se p a{
+    font-size: 2.1rem;
+    text-decoration: none;
+    color: #2997ff;
+    font-weight: 600;
+}
+@media(max-width: 1034px){
+    .navigation-menu{
+        width: 32px;
+        height: 44px;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        background-image: url(../icons/menu.png);
+        float: left;
+        margin-top: 5px;
+    }
+    .navigation-menu li:first-child{
+        background-image: none;
+    }
+    .logo-basket{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top:0px;
+        
+    }
+    .logo-basket li:first-child{
+        width: 16px;
+        height: 44px;
+        background-image: url(https://www.apple.com/ac/globalnav/5/en_US/images/globalnav/apple/image_large.svg);
+        opacity: .7;
+        margin: 0 auto;
+    }
+    .logo-basket li:last-of-type{
+        width: 18px;
+        height: 44px;
+        background-image: url(https://www.apple.com/ac/globalnav/5/en_US/images/globalnav/bag/image_large.svg);
+        margin-right: 20px;
+    }
+    .fast-shoping p{
+        width:230px;
+    }
+}
+@media(max-width: 768px){
+    .iphone-se{
+        top: 1px;/***ВЫЧИСЛИТЬ ПРОЦЕНТЫ****/
+    }
+    .info-for-iphone-se{
+        top: 40px;/***ВЫЧИСЛИТЬ ПРОЦЕНТЫ****/
+    }
+    h2{
+        font-size: 4rem;
+    }
+    .info-for-iphone-se p:nth-of-type(1){
+        font-size:1.8rem;
+    }
+    .info-for-iphone-se p:nth-of-type(2){
+        font-size:1.8rem;
+    }
+    .info-for-iphone-se p:nth-of-type(3){
+        font-size:1.7rem;
+    }
+    .info-for-iphone-se p a{
+        font-size: 1.9rem;
+    }
+}
+/************************IPHONE-11*************************/
+.iphone-11{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #fafafa;
+    position: relative;
+    top:-65px;
+    z-index: 3;
+}
+.info-for-iphone-11{
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    top: 60px;
+}
+.info-for-iphone-11 p:nth-of-type(1){
+    font-size:2.8rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.info-for-iphone-11 p:nth-of-type(2){
+    font-size:1.7rem;
+    margin-top: 0;
+    opacity: .4;
+}
+.info-for-iphone-11 p a{
+    font-size: 2.1rem;
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: 600;
+}
+
+@media(max-width:768px){
+    .iphone-11{
+        top: 15px;/***ВЫЧИСЛИТЬ ПРОЦЕНТЫ****/
+    }
+    .info-for-iphone-11{
+        top: 15px;/***ВЫЧИСЛИТЬ ПРОЦЕНТЫ****/
+    }
+    h2{
+        font-size: 4rem;
+    }
+    .info-for-iphone-11 p:nth-of-type(1){
+        font-size:1.8rem;
+    }
+    .info-for-iphone-11 p:nth-of-type(2){
+        font-size:1.8rem;
+    }
+    .info-for-iphone-11 p a{
+        font-size: 1.9rem;
+    }
+}
+/**************************IPHONE-11-PRO************************/
+.iphone-11-pro{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    top:-240px;
+    z-index: 2;
+    height: 571px;/*******ПРОЦЕНТЫ*/  
+}
+.iphone-11-pro picture img{
+    border-bottom: 15px solid white;  
+}
+.info-for-iphone-11-pro{
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    top: 225px;
+    color: white;
+}
+.info-for-iphone-11-pro p:nth-of-type(1){
+    font-size:2.8rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.info-for-iphone-11-pro p:nth-of-type(2){
+    font-size:1.7rem;
+    margin-top: 0;
+    opacity: .4;
+}
+.info-for-iphone-11-pro p a{
+    font-size: 2.1rem;
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: 600;
+}
+@media(max-width:768px){
+    .iphone-11-pro{
+        top: -125px;/***ВЫЧИСЛИТЬ ПРОЦЕНТЫ****/
+    }
+    .info-for-iphone-11-pro{
+        top: 225px;/***ВЫЧИСЛИТЬ ПРОЦЕНТЫ****/
+    }
+    h2{
+        font-size: 4rem;
+    }
+    .info-for-iphone-11-pro p:nth-of-type(1){
+        font-size:1.8rem;
+    }
+    .info-for-iphone-11-pro p:nth-of-type(2){
+        font-size:1.8rem;
+    }
+    .info-for-iphone-11-pro p a{
+        font-size: 1.9rem;
+    }
+}
+/*************************I-WATCH + I-TV+ ************************/
+.half-page{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 579.617px;
+    overflow: hidden;
+}
+/************************I-WATCH***********************/
+.i-watch{
+    width: 49%;
+    margin-left: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+    height:691.25px; /* ПРОЦЕНТЫ*/
+    z-index: 1;
+    position: relative;
+    top: -246px;/* ПРОЦЕНТЫ*/
+}
+.info-for-i-watch{
+    text-align: center;
+    position: relative;
+    top: 50px;
+    width: 50%;
+}
+.i-watch picture:nth-child(2){
+    position: relative;
+    top: 100px;
+}
+.info-for-i-watch  p:nth-of-type(1){
+    font-size:2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.info-for-i-watch  p:nth-of-type(2){
+    font-size:2rem;
+    margin-top: 0;
+}
+.info-for-i-watch p a{
+    font-size: 2.1rem;
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: 400;
+}
+@media(max-width:768px){
+    .info-for-i-watch p:nth-of-type(1){
+        font-size:1.8rem;
+    }
+    .info-for-i-watch p:nth-of-type(2){
+        font-size:1.8rem;
+    }
+    .info-for-i-watch p a{
+        font-size: 1.8rem;
+    }
+    .i-watch{
+        width: 100%;
+        position: relative;
+        top: -145px;
+    }
+    .info-for-i-watch{
+        position: relative;
+        top: 90px;/*ПРОЦЕНТЫ*/
+    }
+}
+@media(max-width:519px){
+    .info-for-i-watch{
+        width: 100%;
+    }
+}
+@media(min-width:769px) and (max-width:1163px){
+    .info-for-i-watch{
+        position: relative;
+        top: 80px;
+        width: 100%;
+    }
+}
+@media(max-width:1035px){
+    .i-watch{
+        width: 100%;
+        position: relative;
+        top: -140px;
+    }
+}
+
+/*************************I-TV+*************************/
+.i-tv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow:row wrap;
+    width: 49%;
+    margin-right: 10px;
+    z-index: 0;
+}
+.i-tv{
+    background: url(../pages/i-tv/i-tv-original.jpg);
+    background-repeat: no-repeat;
+    height: 691.25px;
+    width: 49%;
+}
+.info-for-i-tv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    position: relative;
+    top: -225px;
+}
+.logo-tv{
+    background-image: url(../icons/tv-original.png);
+    background-repeat: no-repeat;
+    width: 84px;
+    height: 33px;
+    margin-bottom: 15px;
+}
+.jacob-tv{
+    background-image: url(../icons/jacob-original.png);
+    background-repeat: no-repeat;
+    width: 278px;
+    height: 79px;
+}
+.info-for-i-tv p a{
+    font-size: 2.1rem;
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: 400;
+}
+@media(max-width:1035px){
+    .half-page{
+        height: 1145.5px;
+    }
+    .i-tv{
+        width: 100%;
+        position: relative;
+        top: -125px;
+        margin: 0 auto;
+    }
+    .logo-tv{
+        background-image: url(../icons/tv-medium.png);
+        background-repeat: no-repeat;
+    }
+    .jacob-tv{
+        background-image: url(../icons/jacob-medium.png);
+        background-repeat: no-repeat;
+    }
+}
+@media(min-width:768px) and (max-width:1035px){
+    .i-tv{
+        background: url(../pages/i-tv/i-tv-original.jpg);
+        background-repeat: no-repeat;
+    }
+}
+@media(max-width:767px){
+    .i-tv{
+        background: url(../pages/i-tv/i-tv-small.jpg);
+        background-repeat: no-repeat;
+    }
+}
+/*************************FOOTER*******************************/
+footer{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    width: 100%;
+    background-color: #f5f5f7;
+}
+footer p{
+    margin:15px 25% 0 25%;
+    width: 50%;
+    text-align: left;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.6rem;
+    opacity: .5;
+}
+.navigation-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-flow: row wrap;
+    width: 50%;
+    margin:15px 25% 0 25%;
+    border-top: 1px solid rgba(54, 53, 53, 0.356);
+}
+.navigation-list ul{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.6rem;
+    opacity: .5;
+    list-style: none;
+    padding: 0;
+}
+.navigation-list p {
+    text-align: left;
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(54, 53, 53, 0.356);
+}
+.rights{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: left;
+    align-items: flex-start;
+    width: 50%;
+}
+.rights p{
+    margin: 15px 0 0 0;
+}
+.rights ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.6rem;
+    width: 50%;
+    padding: 0;
+}
+@media(max-width:861px){
+    .navigation-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+    }
+    .list-1{
+        width: 107px;
+        height:35px;
+        overflow: hidden;
+    }
+    .list-2{
+        width: 107px;
+        height:35px;
+        overflow: hidden;
+    }
+    .list-3{
+        width: 107px;
+        height:35px;
+        overflow: hidden;
+    }
+    .list-4{
+        width: 107px;
+        height:35px;
+        overflow: hidden;
+    }
+    .list-5{
+        width: 107px;
+        height:35px;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
